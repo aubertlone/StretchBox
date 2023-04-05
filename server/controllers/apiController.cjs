@@ -1,5 +1,5 @@
 const request = require('request')
-const database = require ('../model');
+const database = require ('../model.cjs');
 
 const apiController = {};
 

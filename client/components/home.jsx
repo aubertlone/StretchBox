@@ -17,10 +17,7 @@ const Home = () => {
           <RegionSelector value={setStretchData}/>
           <StretchDisplay value={stretchData}/>
         </div>
-        {/* <div class="dynamic-direction">
-          <SavedStretches />
-          <Routines />
-        </div> */}
+
       </div>
     </>
   )
