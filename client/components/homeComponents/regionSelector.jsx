@@ -110,4 +110,3 @@ const RegionSelector = ({value}) => {
 }
 
 export default RegionSelector;
-

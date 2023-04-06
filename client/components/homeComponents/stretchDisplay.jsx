@@ -6,7 +6,7 @@ const StretchDisplay = ({value}) => {
   return (
 
     <div className="stretchDisplay">
-      <h3>Display For Selected Stretches</h3>
+      <h3>Selected Stretches</h3>
       <StretchDisplayWindow value={value}/>
     </div>
   )
