@@ -5,7 +5,7 @@ import StretchInfo from './stretchInfo';
 const StretchDisplayWindow = ({value}) => {
   const [stretches, setStretches] = useState([]);
   const [stretchCounter, setStretchCounter] = useState(0);
-
+//this useEffect will run every time the value prop changes
   useEffect(() => {
     console.log(value);
     let stretchArr = stretches;
