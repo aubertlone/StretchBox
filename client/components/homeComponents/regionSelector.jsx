@@ -25,7 +25,7 @@ const RegionSelector = ({value}) => {
       e.currentTarget.classList.toggle('activeButton');
     }
   }
-
+/// this function will query the database and return the results to the parent component
   const queryDb = async (e) => {
     // prevent page from refreshing when button is clicked
     e.preventDefault();

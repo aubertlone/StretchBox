@@ -1,4 +1,7 @@
 //This is for populating the database... no need to run it anymore
+//code here is for reference only, will not work as written due to code originating from a different file
+// needs to be refactored to work as a standalone file
+
 function fetchApi(variable) {
   let muscleGroup = variable
   const options = {
