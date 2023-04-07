@@ -1,6 +1,7 @@
 import React from 'react';
 import '../../../stylesheets/stretchinfo.scss';
 
+
 const StretchInfo = value => {
     console.log(value)
   return (

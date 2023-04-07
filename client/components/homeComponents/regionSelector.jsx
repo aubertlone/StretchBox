@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import '../../stylesheets/regionSelector.scss'
 import Body from '../../assets/bodyFrontBack.jpg'
 
+
 const RegionSelector = ({value}) => {
   const [currentRegion, setCurrentRegion] = useState('');
   const [numberOfStretches, setNumberOfStretches] = useState(1);

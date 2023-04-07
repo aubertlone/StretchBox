@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import '../../../stylesheets/stretchDisplayWindow.scss'
 import StretchInfo from './stretchInfo';
 
+
 const StretchDisplayWindow = ({value}) => {
   const [stretches, setStretches] = useState([]);
   const [stretchCounter, setStretchCounter] = useState(0);
