@@ -1,5 +1,3 @@
-# StretchBox4
-Vite Build Tool, src folder already renamed to client
+Identify an area of your body that is sore/tight and StretchBox will select targeted stretches for you.
 
-
-Beginning to port over code from StretchBox
+Now running using the lightweight Vite Build Tool!
