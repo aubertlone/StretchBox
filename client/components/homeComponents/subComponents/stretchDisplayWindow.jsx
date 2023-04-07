@@ -7,6 +7,7 @@ const StretchDisplayWindow = ({value}) => {
   const [stretches, setStretches] = useState([]);
   const [stretchCounter, setStretchCounter] = useState(0);
 //this useEffect will run every time the value prop changes
+//Hooks are great aren't they?
   useEffect(() => {
     console.log(value);
     let stretchArr = stretches;
