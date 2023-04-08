@@ -2,6 +2,8 @@ import React from 'react';
 import '../../stylesheets/savedStretches.scss';
 import SavedStretchDisplay from './subComponents/savedStretchDisplay';
 
+
+
 const SavedStretches = () => {
   return (
     <div className='savedStretchContainer'>

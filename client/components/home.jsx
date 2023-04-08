@@ -7,6 +7,7 @@ import Header from "./homeComponents/header";
 import '../stylesheets/home.scss'
 
 
+
 const Home = () => {
   const [stretchData, setStretchData] = useState('');
   return (

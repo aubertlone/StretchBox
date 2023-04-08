@@ -1,6 +1,7 @@
 import { Navigate, Outlet } from "react-router-dom";
 import React from "react";
 
+
 export const PrivateRoutes = () => {
 
     // dummy auth token that will be replaced with real auth token status obtained on successful authentication

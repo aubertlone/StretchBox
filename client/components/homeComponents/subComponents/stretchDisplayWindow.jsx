@@ -2,12 +2,14 @@ import React, { useEffect, useState } from 'react'
 import '../../../stylesheets/stretchDisplayWindow.scss'
 import StretchInfo from './stretchInfo';
 
+
 const StretchDisplayWindow = ({value}) => {
   const [stretches, setStretches] = useState([]);
   const [stretchCounter, setStretchCounter] = useState(0);
 //this useEffect will run every time the value prop changes
+//Hooks are great aren't they?
   useEffect(() => {
-    console.log(value);
+    // console.log(value);
     let stretchArr = stretches;
     if (value) {
       for (let i = 0; i < value.length; i++) {
@@ -21,7 +23,10 @@ const StretchDisplayWindow = ({value}) => {
     }
     setStretches(stretchArr);
     setStretchCounter(stretchCounter + 1);
+    console.log('this is the array containing objects that represent our Strech Info', stretches)
   }, [value])
+
+
 
   return(
     <div className="StretchDisplayWindow">
