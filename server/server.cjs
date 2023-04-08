@@ -3,9 +3,13 @@ const request = require('request')
 const database = require ('./model.cjs');
 const app = express();
 const port = 3010;
+const path = require('path');
+
+// console.log(path.join(__dirname, '../client/dist'))
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+app.use(express.static(path.join(__dirname, '../dist')));
 
 const apiController = require('./controllers/apiController.cjs')
 
@@ -15,13 +19,15 @@ app.post('/api', apiController.getExercises, (req, res) => {
   res.status(200).json(res.locals.stretches);
 });
 
-app.get('/', (req, res) => {
- res.sendStatus(200);
+app.get('*', (req, res) => {
+  console.log('hello');
+  res.sendFile(path.join(__dirname, '../dist/index.html'));
+//  res.sendStatus(200);
 });
 
-app.use('*', (req, res) => {
-  res.status(404).send('There are no stretches over here.')
-});
+// app.use('*', (req, res) => {
+//   res.status(404).send('There are no stretches over here.')
+// });
 
 
 app.use((err, req, res, next) => {
