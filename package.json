@@ -8,7 +8,8 @@
     "test": "nodemon ./server/server.cjs",
     "build": "vite build",
     "preview": "vite preview",
-    "start": "concurrently \" vite \" \"nodemon ./server/server.cjs\""
+    "start": "concurrently \" vite \" \"nodemon ./server/server.cjs\"",
+    "production": "node ./server/server.cjs",
   },
   "dependencies": {
     "dns": "^0.2.2",
