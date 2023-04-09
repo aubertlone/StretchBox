@@ -2,7 +2,7 @@ const express = require('express');
 const request = require('request')
 const database = require ('./model.cjs');
 const app = express();
-const port = 3010;
+const port = process.env.PORT || 3010;
 const path = require('path');
 
 // console.log(path.join(__dirname, '../client/dist'))
