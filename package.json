@@ -4,9 +4,10 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "concurrently \" vite \" \"nodemon ./server/server.cjs\"",
+    "dev": "node ./server/server.cjs",
     "test": "nodemon ./server/server.cjs",
     "build": "vite build",
+    "123": "node ./server/server.cjs",
     "preview": "vite preview",
     "start": "concurrently \" vite \" \"nodemon ./server/server.cjs\""
   },
